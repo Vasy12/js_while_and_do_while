@@ -13,6 +13,7 @@ do {
             const userValue = prompt("Please input your count");
 
             let i = 0;
+
             while (i++ < userValue) {
 
                 console.log("#");
@@ -64,15 +65,54 @@ do {
         }
             break;
         case "4": {
-            console.log(taskNumber);
+            const firstValue = prompt("First value");
+            const secondValue = prompt("Second value");
+
+            const minValue = firstValue > secondValue ? secondValue : firstValue;
+
+            let i = 0;
+            while (i++ <= minValue) {
+
+                if (firstValue % i === 0 && secondValue % i === 0) {
+                    console.log(i);
+                }
+
+            }
+
         }
             break;
         case "5": {
-            console.log(taskNumber);
+            const value = prompt("Input yout value");
+
+            if (value == 0) {
+                console.log(1);
+                break;
+            }
+            let i = 1;
+            let result = 1;
+            while (i++ < value) {
+
+                result *= i;
+
+            }
+            console.log(result);
+
+
         }
             break;
         case "6": {
-            console.log(taskNumber);
+
+
+            for (let i = 0; i < 100; i++) {
+
+                if (i === 50) {
+                    break;
+                }
+
+
+            }
+
+
         }
             break;
         case "7": {
@@ -91,6 +131,7 @@ do {
             console.log(taskNumber);
         }
             break;
+
         case "E":
         case "e": {
             console.log(taskNumber);
@@ -98,7 +139,6 @@ do {
             stay = false;
         }
             break;
-
 
     }
 
